@@ -2,7 +2,10 @@
 Print stack trace when terminate is throwing. 
 **Work only on Unix machine due to execinfo.h (backtrace function)**
 
-# Compilation
+## Project integration
+Simple, just put the `smart_terminate.h` file in your project.
+
+## Compilation
 Please compile with `-rdynamic` flag.
 
 `
@@ -10,3 +13,6 @@ Please compile with `-rdynamic` flag.
 `
 
 `make run` pipes the error output in `c++filt` to have a better printing.
+
+## Output
+![Output](output.png)
